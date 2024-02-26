@@ -16,7 +16,7 @@
           <div class="row">
             <div class="col-auto header__logo d-flex align-items-center">
               <img src="./img/mobile-logo.png" alt="" class="header__logo-mobile d-lg-none">
-              <img src="./img/logo.svg" alt="" class="d-none d-lg-block">
+              <img src="./img/logo.svg" alt="" class="d-none d-lg-block py-2">
             </div>
 
             <div class="col header__search d-flex flex-grow-1 align-items-center">
@@ -47,27 +47,34 @@
         </nav>
       </header>
 
-      <main class="d-flex">
-        <aside class="d-flex flex-column">
-          <div class="container">
-            <nav class="aside__menu">
-              <ul class="aside__list list-unstyled">
+      <main class="d-flex ">
+        <aside class="d-flex justify-content-center py-3">
+          
+          <nav class="aside__menu d-flex flex-column justify-content-between d-flex flex-column align-items-center">
+              <ul class="aside__list list-unstyled gap-2 d-flex flex-column">
                 <li>
-
+                  <i class="fa-solid fa-house"></i>
+                  <span class="d-none d-lg-inline">Home</span>
                 </li>
                 <li>
-
+                  <i class="fa-solid fa-chart-simple"></i>
+                  <span class="d-none d-lg-inline">Stats</span>
                 </li>
                 <li>
-
+                  <i class="fa-solid fa-signal"></i>
+                  <span class="d-none d-lg-inline">Signals</span>
                 </li>
               </ul>
-              <div class="aside__admin">
 
+              <div class="aside__admin mt-auto d-flex gap-3">
+                <i class="fa-solid fa-gear"></i>
+                <span class="d-none d-lg-inline">Admin</span>
               </div>
-            </nav>
-          </div>
-        </aside>
+          </nav>
+          
+        </aside>    
+          
+        
 
         <div class="container">
           <div class="container main__header">

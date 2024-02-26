@@ -3,6 +3,7 @@
     --ligth-gray: #F8F9FA;
     --gray: #E5E5E5;
     --blue: #1B72E8;
+    --dark-blue: #051E34;
 }
 
 img {
@@ -88,9 +89,33 @@ ul li a {
 /* -----ASIDE----- */
 aside {
     background-image: url(../img/sidebar-bg.png);
+    background-color: var(--dark-blue);
     width: 70px;
     height: 100%;
+    color: var(--ligth-gray);
 }
+
+aside ul li {
+    display: flex;
+    gap: 20px;
+    line-height: 24px;
+    
+    
+}
+
+aside ul li i,
+.aside__admin i {
+    align-self: center;
+    
+}
+
+
+aside nav {
+    height: 100%;
+}
+
+
+
 
 
 /* -----MAIN----- */
@@ -127,3 +152,30 @@ main {
 
 
 
+/* -------MEDIA QUERY-------- */
+
+/* tablet */
+
+@media (min-width: 768px) {
+
+
+
+}
+
+
+/* Desktop */ 
+
+@media (min-width: 992px) {
+
+    aside {
+        
+        width: 150px;
+        
+    }
+    
+    nav {
+        width: 100%;
+    }
+
+
+}

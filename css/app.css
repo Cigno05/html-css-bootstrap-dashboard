@@ -1,0 +1,74 @@
+:root {
+    --ligth-gray: #F8F9FA;
+    --gray: #E5E5E5;
+    --blue: #1B72E8;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* -----HEADER----- */
+header {
+    height: 50px;
+}
+
+/* -----ASIDE----- */
+aside {
+    background-image: url(../img/sidebar-bg.png);
+    width: 70px;
+    height: 100%;
+}
+
+
+/* -----MAIN----- */
+main {
+    background-color: var(--gray);
+    height: calc(100vh - 50px)
+}
+
+
+/* -----Main-HEADER----- */
+.main__header {
+    background-color: var(--blue);
+}
+
+
+
+/* -----MAIN-BODY----- */
+/* .main__body {
+    background-color: var(--gray);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+
+.debug [class^="container"] {
+    border: 1px solid black;
+}
+
+.debug [class^="row"] {
+    border: 1px solid red;
+}
+
+.debug [class^="col"] {
+    border: 1px solid green;
+}
+
+.debug [class^="card"] {
+    border: 1px solid violet;
+}
+
+
+

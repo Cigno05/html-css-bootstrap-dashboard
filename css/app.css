@@ -1,4 +1,5 @@
 :root {
+    --dark-gray: #5B5858;
     --ligth-gray: #F8F9FA;
     --gray: #E5E5E5;
     --blue: #1B72E8;
@@ -8,9 +9,80 @@ img {
     max-width: 100%;
 }
 
+
+
+
 /* -----HEADER----- */
-header {
+/* header {
     height: 50px;
+} */
+
+.header__logo img {
+    height: 50px;
+    padding: 5px 0;
+}
+
+.header__search {
+	position: relative;
+	margin: 10px 0;
+}
+
+.header__search i {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	color: var(--dark-gray);
+	transform: translateY(-50%);
+	pointer-events: none;
+	font-size: 16px;
+}
+
+.header__search input {
+    background-color: var(--gray);
+    /* border-radius: 6px;
+    border: none; */
+}
+
+.header__search input:focus-visible + i {
+	/* color: blue; */
+	display: none;
+}
+
+
+ul li a {
+    color: currentcolor;
+}
+
+.header__list {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+}
+
+.header__list .header__circle > a {
+	color: currentColor;
+	width: 30px;
+	aspect-ratio: 1/1;
+	border: 1px solid;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+    color: white;
+    background-color: var(--dark-gray);
+}
+
+.a:hover {
+    color: currentColor !important;
+    text-decoration: none;
+}
+
+.header__bell {
+    color: #FF8F00;
 }
 
 /* -----ASIDE----- */
@@ -52,23 +124,6 @@ main {
 
 
 
-/* DEBUG */
-
-.debug [class^="container"] {
-    border: 1px solid black;
-}
-
-.debug [class^="row"] {
-    border: 1px solid red;
-}
-
-.debug [class^="col"] {
-    border: 1px solid green;
-}
-
-.debug [class^="card"] {
-    border: 1px solid violet;
-}
 
 
 

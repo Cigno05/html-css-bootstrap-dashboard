@@ -10,32 +10,39 @@
     <link rel="stylesheet" href="./css/app.css">
     <title>Bootstrap Dashboard</title>
   </head>
-  <body class="debug">
+  <body >
       <header>
         <nav class="container-fluid">
           <div class="row">
-            <div class="col header__logo">
-              
+            <div class="col-auto header__logo d-flex align-items-center">
+              <img src="./img/mobile-logo.png" alt="" class="header__logo-mobile d-lg-none">
+              <img src="./img/logo.svg" alt="" class="d-none d-lg-block">
             </div>
-            <div class="col header__search">
-              
-            </div>
-            <div class="col header__menu">
-              <ul class="header__list list-unstyled">
-                <li>
 
+            <div class="col header__search d-flex flex-grow-1 align-items-center">
+              <input class="flex-grow-1 border-0 rounded-4" type="search" placeholder="" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="col-auto header__menu d-none d-lg-flex">
+              <ul class="header__list list-unstyled d-flex mb-0 align-items-center gap-3">
+                <li>
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i></a>
+                </li>
+                <li class="header__circle justify-content-center">
+                  <a href=""><i class="fa-solid fa-question"></i></a>
                 </li>
                 <li>
-
-                </li>
-                <li>
-
+                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 </li>
               </ul>
             </div>
-            <div class="col header__bell">
-
-            </div>
+            
+            <div class="col-auto header__bell d-flex align-items-center">
+              <i class="fa-solid fa-bell"></i>
+            </div>    
+              
+              
           </div>
         </nav>
       </header>

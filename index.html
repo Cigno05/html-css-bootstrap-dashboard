@@ -11,111 +11,120 @@
     <title>Bootstrap Dashboard</title>
   </head>
   <body >
-      <header>
-        <nav class="container-fluid">
-          <div class="row">
-            <div class="col-auto header__logo d-flex align-items-center">
-              <img src="./img/mobile-logo.png" alt="" class="header__logo-mobile d-lg-none">
-              <img src="./img/logo.svg" alt="" class="d-none d-lg-block py-2">
-            </div>
+    <div id="app" class="vh-100 d-flex flex-column">
 
-            <div class="col header__search d-flex flex-grow-1 align-items-center">
-              <input class="flex-grow-1 border-0 rounded-4" type="search" placeholder="" aria-label="Search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <div class="col-auto header__menu d-none d-lg-flex">
-              <ul class="header__list list-unstyled d-flex mb-0 align-items-center gap-3">
-                <li>
-                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i></a>
-                </li>
-                <li class="header__circle justify-content-center">
-                  <a href=""><i class="fa-solid fa-question"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="col-auto header__bell d-flex align-items-center">
-              <i class="fa-solid fa-bell"></i>
-            </div>    
-              
-              
-          </div>
-        </nav>
+      <header class="header__toolbar">
+          <nav class="container-fluid">
+              <div class="row">
+                <div class="col-auto header__logo d-flex align-items-center">
+                  <img src="./img/mobile-logo.png" alt="" class="header__logo-mobile d-lg-none">
+                  <img src="./img/logo.svg" alt="" class="d-none d-lg-block py-2">
+                </div>
+    
+                <div class="col header__search d-flex flex-grow-1 align-items-center">
+                  <input class="flex-grow-1 border-0 rounded-4" type="search" placeholder="" aria-label="Search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+    
+                <div class="col-auto header__menu d-none d-lg-flex">
+                  <ul class="header__list list-unstyled d-flex mb-0 align-items-center gap-3">
+                    <li>
+                      <a href=""><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li class="header__circle justify-content-center">
+                      <a href=""><i class="fa-solid fa-question"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="col-auto header__bell d-flex align-items-center">
+                  <i class="fa-solid fa-bell"></i>
+                </div>    
+                  
+                  
+              </div>
+            </nav>
       </header>
+      
+      <div class="app__body flex-grow-1 d-flex text-white">
 
-      <main class="d-flex ">
-        <aside class="d-flex justify-content-center py-3">
-          
-          <nav class="aside__menu d-flex flex-column justify-content-between d-flex flex-column align-items-center">
-              <ul class="aside__list list-unstyled gap-2 d-flex flex-column">
-                <li>
-                  <i class="fa-solid fa-house"></i>
-                  <span class="d-none d-lg-inline">Home</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-chart-simple"></i>
-                  <span class="d-none d-lg-inline">Stats</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-signal"></i>
-                  <span class="d-none d-lg-inline">Signals</span>
-                </li>
-              </ul>
+          <aside class="sidebar p-3 d-flex flex-column">
+              <nav>
+                  <ul>
+                      <li>
+                          <i class="fa-solid fa-house"></i>
+                          <a href="#" class="d-none d-lg-inline">Home</a>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-chart-simple"></i>
+                          <a href="#" class="d-none d-lg-inline">Stats</a>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-signal"></i>
+                          <a href="#" class="d-none d-lg-inline">Signals</a>
+                        </li>
+                        <li class="mt-auto">
+                          <i class="fa-solid fa-gear"></i>
+                          <a href="#" class="d-none d-lg-inline">Admin</a>
+                      </li>
+                  </ul> 
+              </nav>
 
-              <div class="aside__admin mt-auto d-flex gap-3">
-                <i class="fa-solid fa-gear"></i>
-                <span class="d-none d-lg-inline">Admin</span>
-              </div>
-          </nav>
-          
-        </aside>    
-          
-        
+          </aside>
 
-        <div class="container">
-          <div class="container main__header">
-            <div class="row">
-              <div class="col">
-
-              </div>
-              <div class="col">
-
-              </div>
-              <div class="col">
-
-              </div>
-            </div>
-          </div>
-
-          <div class="container main__body">
-            <div class="row">
-
-              <div class="col">
-                <div class="card">
-
+          <main class="flex-grow-1">
+              
+              <div class="main__header">
+                <div class="container">
+                  <div class="row py-2 d-flex justify-content-between">
+                    <div class="col d-flex flex-column order-1">
+                      <div class="d-flex">
+                        <h3>Boolean</h3>
+                        <button class="header__btn btn btn-sm rounded-pill">Piano blaze</button>
+                      </div>
+                    
+                      <div class="d-flex gap-2">
+                        <button class="header__btn btn btn-sm rounded-pill">
+                          3 app
+                        </button>
+                        <button class="header__btn btn btn-sm rounded-pill d-none d-lg-inline">
+                          Boolean mobile app
+                        </button>
+                        <button class="header__btn btn btn-sm rounded-pill d-none d-lg-inline">
+                          boolean web app
+                        </button>
+                        <button class="header__btn btn btn-sm rounded-pill d-none d-lg-inline">
+                          boolean blog app
+                        </button>
+                        <button class="header__btn btn btn-sm rounded-pill d-lg-none">
+                          +
+                        </button>
+                      </div>
+      
+                    </div>  
+                    <div class="col order-1">
+                      <h5>Studenti online negli ultimi 30 giorni</h5>
+                      <h3>125</h3>
+                    </div>
+                    <div class="col d-flex new-student gap-2">
+                      <h4>Nuovo Studente</h4>
+                      <button class="">
+                        +
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="card">
-
-                </div>
+              
               </div>
+              <div class=" container main__body">
 
-              <div class="col">
-                <div class="card">
-                  
-                </div>
-                <div class="card">
-                  
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-      </main>
+          </main>
+      </div>
+  </div>
 
 
 

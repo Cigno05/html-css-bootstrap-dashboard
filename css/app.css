@@ -132,29 +132,6 @@ main {
     background-color: var(--blue);
 }
 
-.header__btn {
-    color: white;
-    font-size: 8px;
-    background-color: #165BBA;
-    padding: 5px;
-    
-}
-
-.new-student button {
-    color: currentColor;
-	height: 40px;
-	aspect-ratio: 1/1;
-	border: 1px solid;
-	border-radius: 6px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0;
-}
 
 
 

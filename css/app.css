@@ -2,6 +2,7 @@
     --dark-gray: #5B5858;
     --ligth-gray: #F8F9FA;
     --gray: #F8F9FA;
+	--medium-dark-gray: #E5E5E5;
     --blue: #1B72E8;
     --dark-blue: #051E34;
 }
@@ -50,7 +51,7 @@
 
 .header__search input {
     height: 42px;
-	background-color:#E5E5E5;
+	background-color:var(--medium-dark-gray);
 	border-radius: 10px;
 	width: 100%;
 	border: none;
@@ -151,6 +152,13 @@ main {
 	width: 500px;
 }
 
+.app-btn::after {
+	content: '»';
+}
+
+.app-btn {
+	display: inline-block;
+}
 
 /* -----MAIN-BODY----- */
 main {
@@ -159,7 +167,7 @@ main {
 
 .card {
     border: 1px solid var(--dark-gray);
-	border-radius: 12px;
+	
 	background-color: white;
 	
 	
@@ -178,7 +186,7 @@ main {
 
 
 .card-border {
-	border: 2px solid var(--gray);
+	border: 2px solid var(--medium-dark-gray);
 	border-radius: 5px;
 	padding: 5px;
 	margin: 12px;
@@ -197,7 +205,6 @@ th img {
 	margin-right: 12px;
 }
 
-.tabel
 
 .table-class th {
 	font-weight: 400;
@@ -213,7 +220,7 @@ th img {
 }
 
 .table-class td i {
-	border: 2px solid var(--gray);
+	border: 2px solid var(--medium-dark-gray);
 	border-radius: 5px;
 	padding: 5px;
 }

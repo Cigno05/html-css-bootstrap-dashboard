@@ -140,30 +140,64 @@ main {
     
 }
 
-.new-student button {
-    color: currentColor;
-	height: 40px;
-	aspect-ratio: 1/1;
-	border: 1px solid;
-	border-radius: 6px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0;
-}
 
 
 
 /* -----MAIN-BODY----- */
+main {
+    overflow-y: scroll;
+}
 
+.card {
+    border: 1px solid var(--dark-gray);
+	border-radius: 12px;
+	
+    
+}
+.card-header {
+    color: black;
+    background-color: var(--gray);
+    border-bottom: 1px solid var(--dark-gray);
+}
+.form-select {
+    border: 0;
+    padding-bottom: 0;
+}
 
+th img {
+	width: 24px;
+	margin-right: 12px;
+}
 
+.tabel-class th {
+	font-weight: 400;
 
+}
 
+.tabel-class .btn {
+	padding: 3px 6px;
+	border: none;
+	border-radius: 6px;
+	font-size: 10px;
+	color: white;
+}
+
+.tabel-class td i {
+	border: 2px solid var(--gray);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.tabel-class td i:first-child {
+	margin-right: 5px;
+}
+
+.card-border {
+	border: 2px solid var(--gray);
+	border-radius: 5px;
+	padding: 5px;
+	margin: 12px;
+}
 
 
 
@@ -185,7 +219,7 @@ main {
 
     .new-student {
         order: 2;
-        justify-content: flex-end;
+        text-align: end;
     }
 }
 
@@ -201,6 +235,10 @@ main {
     .sidebar li {
         display: flex;
         justify-content: left;
+    }
+
+    .th-name {
+        width: 500px;
     }
 
     

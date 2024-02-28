@@ -6,6 +6,9 @@
     --dark-blue: #051E34;
 }
 
+.selector-for-some-widget {
+	box-sizing: content-box;
+  }
 
 #app {
 	background-color: #f8f9fa;
@@ -132,15 +135,21 @@ main {
     background-color: var(--blue);
 }
 
-.header__btn {
+.main__header-btn {
     color: white;
-    font-size: 8px;
+    font-size: 12px;
     background-color: #165BBA;
-    padding: 5px;
+    padding: 1px 6px;
     
 }
 
+.offcanvas-body [class^="col"] {
+	text-align: left;
+}
 
+.offcanvas {
+	width: 500px;
+}
 
 
 /* -----MAIN-BODY----- */
@@ -169,12 +178,14 @@ th img {
 	margin-right: 12px;
 }
 
-.tabel-class th {
+.tabel
+
+.table-class th {
 	font-weight: 400;
 
 }
 
-.tabel-class .btn {
+.table-class .btn {
 	padding: 3px 6px;
 	border: none;
 	border-radius: 6px;
@@ -182,13 +193,13 @@ th img {
 	color: white;
 }
 
-.tabel-class td i {
+.table-class td i {
 	border: 2px solid var(--gray);
 	border-radius: 5px;
 	padding: 5px;
 }
 
-.tabel-class td i:first-child {
+.table-class td i:first-child {
 	margin-right: 5px;
 }
 
@@ -221,6 +232,7 @@ th img {
         order: 2;
         text-align: end;
     }
+
 }
 
 
